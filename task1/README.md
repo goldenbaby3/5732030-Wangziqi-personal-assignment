@@ -6,8 +6,10 @@ The main objective of the project is to provide a tool that supports data access
 The project simulates a real-world scenario in which a software developer builds a support tool for AI or data science teams. Emphasis is placed on software engineering best practices, modular design, and test-driven development (TDD).
 
 2. Data Source Description
+
 🔹Data source type
 This project uses a public dataset in CSV format as the data source.
+
 🔹Data file description
 The file used is COVID-19_Vaccination_Rates.csv. The dataset includes the following fields:
  ·Month

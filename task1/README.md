@@ -1,41 +1,48 @@
-Public Health Data Insight Dashboard (Task 1)
-1. Project Overview
+# Task 1
+
+---
+
+## 1. Project Overview
 
 This project is a Python-based public health data insight dashboard designed to analyze public health datasets such as COVID-19 vaccination rates.
 The main objective of the project is to provide a tool that supports data access, cleaning, filtering, aggregation, and visualization, without involving any predictive modeling.
 
 The project simulates a real-world scenario in which a software developer builds a support tool for AI or data science teams. Emphasis is placed on software engineering best practices, modular design, and test-driven development (TDD).
 
-2. Data Source Description
+---
 
-🔹Data source type
+## 2. Data Source Description
+
+### 🔹Data source type
 This project uses a public dataset in CSV format as the data source.
 
-🔹Data file description
+### 🔹Data file description
 The file used is COVID-19_Vaccination_Rates.csv. The dataset includes the following fields:
 
- ·Month
- 
- ·Local Electoral Area
- 
- ·Statistic Label
- 
- ·Age Group
- 
- ·Value (VALUE)
+·Month
 
-🔹Example data file path
+·Local Electoral Area
+ 
+·Statistic Label
+ 
+·Age Group
+ 
+·Value (VALUE)
+
+### 🔹Example data file path
 ```bash
 data/COVID-19_Vaccination_Rates.csv
 ```
 
-3. Core Functionality Description
+---
 
-🔹Data Access and Loading
+## 3. Core Functionality Description
+
+### 🔹Data Access and Loading
  ·Public health data is loaded from a CSV file using the pandas library
  ·The data can be stored in a local SQLite database for persistent access and management
  
-🔹Data Cleaning and Structuring
+### 🔹Data Cleaning and Structuring
 
  ·Missing and inconsistent data are handled during the cleaning process
  
@@ -45,7 +52,7 @@ data/COVID-19_Vaccination_Rates.csv
  
  ·pandas DataFrame is used as the primary data structure to facilitate filtering, grouping, and aggregation
  
-🔹Data Filtering and Aggregated Views
+### 🔹Data Filtering and Aggregated Views
 
  Users can filter the dataset based on the following conditions:
 
@@ -71,31 +78,37 @@ data/COVID-19_Vaccination_Rates.csv
   
   ·Year-Month
   
-🔹Time Trend Analysis
+### 🔹Time Trend Analysis
 
  ·Data is aggregated by month
  
  ·Time trend line charts are generated using matplotlib to visualize changes over time
  
-🔹Presentation Layer (CLI)
+### 🔹Presentation Layer (CLI)
 
  ·An interactive command-line interface (CLI) is provided
  
  ·Users interact with the system through menu-based input
  
  ·Results are presented as tables or graphical visualizations
+ 
+---
 
-5. Extended Features
 
-🔹SQLite database functionality is implemented for data creation, storage, and retrieval
+## 4. Extended Features
 
-🔹Filtered or original datasets can be exported as CSV files
+### 🔹SQLite database functionality is implemented for data creation, storage, and retrieval
 
-🔹User operations are recorded using the logging module in the dashboard.log file
+### 🔹Filtered or original datasets can be exported as CSV files
 
-🔹The project adopts a modular architecture to improve maintainability and extensibility
+### 🔹User operations are recorded using the logging module in the dashboard.log file
 
-7. Project Structure
+### 🔹The project adopts a modular architecture to improve maintainability and extensibility
+
+---
+
+
+## 5. Project Structure
 ```bash
 task1/
 │
@@ -123,76 +136,91 @@ task1/
 └── requirements.txt
 ```
 
-6. Test-Driven Development (TDD)
+---
 
-🔹This project strictly follows the test-driven development approach
+## 6. Test-Driven Development (TDD)
 
-🔹Test cases are written before implementing functional code
+### 🔹This project strictly follows the test-driven development approach
 
-🔹Each functional module has one or more corresponding test files
+### 🔹Test cases are written before implementing functional code
 
-🔹Tests cover:
+### 🔹Each functional module has one or more corresponding test files
+
+### 🔹Tests cover:
 
  ·Functional correctness
  
  ·Edge cases such as empty inputs, missing values, and invalid data types
  
-🔹The pytest framework is used for automated testing
+### 🔹The pytest framework is used for automated testing
 ```bash
 pytest tests/ -v
 ```
 
-7. How to Run the Program
+---
 
-🔹Install Dependencies
+## 7. How to Run the Program
+
+### 🔹Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
-🔹Run the Program
+### 🔹Run the Program
 ```bash
 run_system1.py
 ```
 
-8. External Libraries and Tools
+---
 
-🔹pandas: data loading, cleaning, and analysis
+## 8. External Libraries and Tools
 
-🔹matplotlib: data visualization
+### 🔹pandas: data loading, cleaning, and analysis
 
-🔹seaborn: chart styling and enhancement
+### 🔹matplotlib: data visualization
 
-🔹sqlite3: local relational database
+### 🔹seaborn: chart styling and enhancement
 
-🔹pytest: automated testing
+### 🔹sqlite3: local relational database
 
-🔹logging: operation logging
+### 🔹pytest: automated testing
 
-9. Ethics and Originality Statement
+### 🔹logging: operation logging
 
-🔹This project is developed solely for academic coursework
+---
 
-🔹All data used is publicly available public health data and does not involve personal or sensitive information
 
-🔹All code logic has been fully understood and implemented by the author
+## 9. Ethics and Originality Statement
 
-🔹The project adheres to academic integrity and software engineering best practices
+### 🔹This project is developed solely for academic coursework
 
-10. Reflection and Future Work
+### 🔹All data used is publicly available public health data and does not involve personal or sensitive information
 
-🔹The current CLI-based tool can be extended into a web-based dashboard using frameworks such as Flask or FastAPI
+### 🔹All code logic has been fully understood and implemented by the author
 
-🔹Real-time public health APIs can be integrated as additional data sources
+### 🔹The project adheres to academic integrity and software engineering best practices
 
-🔹More advanced statistical analysis modules can be added
+---
 
-🔹High-performance computing techniques, such as parallel processing or GPU acceleration, may be considered for large-scale datasets
 
-11. Git Repository Information
+## 10. Reflection and Future Work
 
-🔹Git is used for version control throughout the project
+### 🔹The current CLI-based tool can be extended into a web-based dashboard using frameworks such as Flask or FastAPI
 
-🔹Each functional and testing module has corresponding commit history
+### 🔹Real-time public health APIs can be integrated as additional data sources
 
-🔹The repository is private and course instructors have been added as collaborators as required
+### 🔹More advanced statistical analysis modules can be added
 
-🔹The repository contains all required code, tests, and documentation
+### 🔹High-performance computing techniques, such as parallel processing or GPU acceleration, may be considered for large-scale datasets
+
+---
+
+
+## 11. Git Repository Information
+
+### 🔹Git is used for version control throughout the project
+
+### 🔹Each functional and testing module has corresponding commit history
+
+### 🔹The repository is private and course instructors have been added as collaborators as required
+
+### 🔹The repository contains all required code, tests, and documentation
